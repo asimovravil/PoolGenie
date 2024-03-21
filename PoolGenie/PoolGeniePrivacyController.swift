@@ -3,7 +3,7 @@ import WebKit
 
 class PoolGeniePrivacyController: UIViewController {
     var webView: WKWebView!
-    let urlToLoad = "https://www.app-privacy-policy.com/live.php?token=urU9DmopppFbbLnLSyfE6JWBZhUMQlgU"
+    let urlToLoad = "https://www.app-privacy-policy.com/live.php?token=t0rg0Of7vzj8wNRsP4CqGekhgPNu7Wh0"
 
     override func loadView() {
         webView = WKWebView()
