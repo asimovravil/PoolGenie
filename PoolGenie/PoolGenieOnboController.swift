@@ -49,12 +49,12 @@ extension PoolGenieOnboController: PoolGenieUI {
     }
     
     func pool_genie_bar() {
-        let backButton = UIBarButtonItem(image: UIImage(named: "pool_genie_skip"), style: .plain, target: self, action: #selector(backButtonTapped))
+        let backButton = UIBarButtonItem(image: UIImage(named: "pool_genie_skip"), style: .plain, target: self, action: #selector(pool_genie_skip_tapped))
         navigationItem.rightBarButtonItem = backButton
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
-    @objc private func backButtonTapped() {
+    @objc private func pool_genie_skip_tapped() {
 //        let vc = AztecCreateController()
 //        let navigationController = UINavigationController(rootViewController: vc)
 //        navigationController.modalPresentationStyle = .fullScreen

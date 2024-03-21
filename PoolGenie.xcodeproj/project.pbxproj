@@ -13,6 +13,15 @@
 		F1E697AF2BAC2B5C006EC5E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E697AE2BAC2B5C006EC5E9 /* Assets.xcassets */; };
 		F1E697B22BAC2B5C006EC5E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E697B02BAC2B5C006EC5E9 /* LaunchScreen.storyboard */; };
 		F1E697BB2BAC2DAE006EC5E9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F1E697BA2BAC2DAE006EC5E9 /* SnapKit */; };
+		F1E697BD2BAC30B4006EC5E9 /* PoolGenieCalculatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E697BC2BAC30B4006EC5E9 /* PoolGenieCalculatorController.swift */; };
+		F1E697C62BAC3381006EC5E9 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1E697BE2BAC3381006EC5E9 /* Nunito-Bold.ttf */; };
+		F1E697C72BAC3381006EC5E9 /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1E697BF2BAC3381006EC5E9 /* Nunito-ExtraBold.ttf */; };
+		F1E697C82BAC3381006EC5E9 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1E697C02BAC3381006EC5E9 /* Nunito-Regular.ttf */; };
+		F1E697C92BAC3381006EC5E9 /* Nunito-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1E697C12BAC3381006EC5E9 /* Nunito-ExtraLight.ttf */; };
+		F1E697CA2BAC3381006EC5E9 /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1E697C22BAC3381006EC5E9 /* Nunito-Light.ttf */; };
+		F1E697CB2BAC3381006EC5E9 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1E697C32BAC3381006EC5E9 /* Nunito-SemiBold.ttf */; };
+		F1E697CC2BAC3381006EC5E9 /* Nunito-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1E697C42BAC3381006EC5E9 /* Nunito-Medium.ttf */; };
+		F1E697CD2BAC3381006EC5E9 /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1E697C52BAC3381006EC5E9 /* Nunito-Black.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +32,15 @@
 		F1E697AE2BAC2B5C006EC5E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1E697B12BAC2B5C006EC5E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1E697B32BAC2B5C006EC5E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1E697BC2BAC30B4006EC5E9 /* PoolGenieCalculatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolGenieCalculatorController.swift; sourceTree = "<group>"; };
+		F1E697BE2BAC3381006EC5E9 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		F1E697BF2BAC3381006EC5E9 /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
+		F1E697C02BAC3381006EC5E9 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		F1E697C12BAC3381006EC5E9 /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
+		F1E697C22BAC3381006EC5E9 /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
+		F1E697C32BAC3381006EC5E9 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
+		F1E697C42BAC3381006EC5E9 /* Nunito-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Medium.ttf"; sourceTree = "<group>"; };
+		F1E697C52BAC3381006EC5E9 /* Nunito-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Black.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +77,18 @@
 				F1E697A52BAC2B5A006EC5E9 /* AppDelegate.swift */,
 				F1E697A72BAC2B5A006EC5E9 /* SceneDelegate.swift */,
 				F1E697A92BAC2B5A006EC5E9 /* PoolGenieOnboController.swift */,
+				F1E697BC2BAC30B4006EC5E9 /* PoolGenieCalculatorController.swift */,
 				F1E697AE2BAC2B5C006EC5E9 /* Assets.xcassets */,
 				F1E697B02BAC2B5C006EC5E9 /* LaunchScreen.storyboard */,
 				F1E697B32BAC2B5C006EC5E9 /* Info.plist */,
+				F1E697C52BAC3381006EC5E9 /* Nunito-Black.ttf */,
+				F1E697BE2BAC3381006EC5E9 /* Nunito-Bold.ttf */,
+				F1E697BF2BAC3381006EC5E9 /* Nunito-ExtraBold.ttf */,
+				F1E697C12BAC3381006EC5E9 /* Nunito-ExtraLight.ttf */,
+				F1E697C22BAC3381006EC5E9 /* Nunito-Light.ttf */,
+				F1E697C42BAC3381006EC5E9 /* Nunito-Medium.ttf */,
+				F1E697C02BAC3381006EC5E9 /* Nunito-Regular.ttf */,
+				F1E697C32BAC3381006EC5E9 /* Nunito-SemiBold.ttf */,
 			);
 			path = PoolGenie;
 			sourceTree = "<group>";
@@ -130,8 +157,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E697CB2BAC3381006EC5E9 /* Nunito-SemiBold.ttf in Resources */,
+				F1E697CD2BAC3381006EC5E9 /* Nunito-Black.ttf in Resources */,
+				F1E697C82BAC3381006EC5E9 /* Nunito-Regular.ttf in Resources */,
+				F1E697CA2BAC3381006EC5E9 /* Nunito-Light.ttf in Resources */,
 				F1E697B22BAC2B5C006EC5E9 /* LaunchScreen.storyboard in Resources */,
+				F1E697C62BAC3381006EC5E9 /* Nunito-Bold.ttf in Resources */,
+				F1E697C92BAC3381006EC5E9 /* Nunito-ExtraLight.ttf in Resources */,
 				F1E697AF2BAC2B5C006EC5E9 /* Assets.xcassets in Resources */,
+				F1E697C72BAC3381006EC5E9 /* Nunito-ExtraBold.ttf in Resources */,
+				F1E697CC2BAC3381006EC5E9 /* Nunito-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +179,7 @@
 			files = (
 				F1E697AA2BAC2B5A006EC5E9 /* PoolGenieOnboController.swift in Sources */,
 				F1E697A62BAC2B5A006EC5E9 /* AppDelegate.swift in Sources */,
+				F1E697BD2BAC30B4006EC5E9 /* PoolGenieCalculatorController.swift in Sources */,
 				F1E697A82BAC2B5A006EC5E9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
