@@ -22,6 +22,8 @@
 		F1E697CB2BAC3381006EC5E9 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1E697C32BAC3381006EC5E9 /* Nunito-SemiBold.ttf */; };
 		F1E697CC2BAC3381006EC5E9 /* Nunito-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1E697C42BAC3381006EC5E9 /* Nunito-Medium.ttf */; };
 		F1E697CD2BAC3381006EC5E9 /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1E697C52BAC3381006EC5E9 /* Nunito-Black.ttf */; };
+		F1E697CF2BAC3FD8006EC5E9 /* PoolGenieSettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E697CE2BAC3FD7006EC5E9 /* PoolGenieSettingsController.swift */; };
+		F1E697D12BAC414D006EC5E9 /* PoolGeniePrivacyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E697D02BAC414D006EC5E9 /* PoolGeniePrivacyController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		F1E697C32BAC3381006EC5E9 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
 		F1E697C42BAC3381006EC5E9 /* Nunito-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Medium.ttf"; sourceTree = "<group>"; };
 		F1E697C52BAC3381006EC5E9 /* Nunito-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Black.ttf"; sourceTree = "<group>"; };
+		F1E697CE2BAC3FD7006EC5E9 /* PoolGenieSettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolGenieSettingsController.swift; sourceTree = "<group>"; };
+		F1E697D02BAC414D006EC5E9 /* PoolGeniePrivacyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoolGeniePrivacyController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 				F1E697A72BAC2B5A006EC5E9 /* SceneDelegate.swift */,
 				F1E697A92BAC2B5A006EC5E9 /* PoolGenieOnboController.swift */,
 				F1E697BC2BAC30B4006EC5E9 /* PoolGenieCalculatorController.swift */,
+				F1E697CE2BAC3FD7006EC5E9 /* PoolGenieSettingsController.swift */,
+				F1E697D02BAC414D006EC5E9 /* PoolGeniePrivacyController.swift */,
 				F1E697AE2BAC2B5C006EC5E9 /* Assets.xcassets */,
 				F1E697B02BAC2B5C006EC5E9 /* LaunchScreen.storyboard */,
 				F1E697B32BAC2B5C006EC5E9 /* Info.plist */,
@@ -177,7 +183,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E697CF2BAC3FD8006EC5E9 /* PoolGenieSettingsController.swift in Sources */,
 				F1E697AA2BAC2B5A006EC5E9 /* PoolGenieOnboController.swift in Sources */,
+				F1E697D12BAC414D006EC5E9 /* PoolGeniePrivacyController.swift in Sources */,
 				F1E697A62BAC2B5A006EC5E9 /* AppDelegate.swift in Sources */,
 				F1E697BD2BAC30B4006EC5E9 /* PoolGenieCalculatorController.swift in Sources */,
 				F1E697A82BAC2B5A006EC5E9 /* SceneDelegate.swift in Sources */,
