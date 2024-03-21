@@ -71,6 +71,7 @@ extension PoolGenieCalculatorController: PoolGenieUI {
             
             let textField = createTextField()
             textFields.append(textField)
+            textFields.forEach { $0.addTarget(self, action: #selector(textDidChange(_:)), for: .editingChanged) }
             containerView.addSubview(textField)
             
             textField.snp.makeConstraints { make in
@@ -112,6 +113,7 @@ extension PoolGenieCalculatorController: PoolGenieUI {
         
         pool_genie_calculate.setImage(UIImage(named: "pool_genie_calculate"), for: .normal)
         pool_genie_calculate.addTarget(self, action: #selector(calculateChlorineAmount), for: .touchUpInside)
+        pool_genie_calculate.isEnabled = false
         containerView.addSubview(pool_genie_calculate)
         
         pool_genie_calculate.snp.makeConstraints { make in
@@ -143,6 +145,14 @@ extension PoolGenieCalculatorController: PoolGenieUI {
         pool_genie_label_result.snp.makeConstraints { make in
             make.center.equalTo(pool_genie_card_result.snp.center)
         }
+    }
+    
+    @objc private func textDidChange(_ textField: UITextField) {
+        // Проверяем все текстовые поля на заполненность
+        let allFieldsFilled = textFields.allSatisfy { !$0.text!.isEmpty }
+        
+        // Активируем кнопку, если все поля заполнены
+        pool_genie_calculate.isEnabled = allFieldsFilled
     }
     
     private func createTextField() -> UITextField {
@@ -180,11 +190,17 @@ extension PoolGenieCalculatorController: PoolGenieUI {
     }
     
     @objc private func pool_genie_button_tapped() {
-        
+        let vc = PoolGenieSettingsController()
+        let navigationController = UINavigationController(rootViewController: vc)
+        navigationController.modalPresentationStyle = .fullScreen
+        self.present(navigationController, animated: true, completion: nil)
     }
     
     @objc private func calculateChlorineAmount() {
-        // Проверяем, что все текстовые поля заполнены
+        guard textFields.allSatisfy({ !$0.text!.isEmpty }) else {
+            return
+        }
+        
         for (index, textField) in textFields.enumerated() {
             guard let text = textField.text, !text.isEmpty else {
                 pool_genie_label_result.attributedText = NSAttributedString(string: "Please fill in the field: \(fields[index]).", attributes: [.foregroundColor: UIColor.red])

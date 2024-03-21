@@ -91,7 +91,7 @@ extension PoolGenieSettingsController: PoolGenieUI {
     }
     
     @objc private func pool_genie_button_tapped() {
-        
+        self.dismiss(animated: true)
     }
     
     @objc private func pool_genie_share_tapped() {

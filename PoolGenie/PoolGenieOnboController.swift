@@ -55,20 +55,23 @@ extension PoolGenieOnboController: PoolGenieUI {
     }
     
     @objc private func pool_genie_skip_tapped() {
-//        let vc = AztecCreateController()
-//        let navigationController = UINavigationController(rootViewController: vc)
-//        navigationController.modalPresentationStyle = .fullScreen
-//        self.present(navigationController, animated: true, completion: nil)
+        let vc = PoolGenieCalculatorController()
+        let navigationController = UINavigationController(rootViewController: vc)
+        navigationController.modalPresentationStyle = .fullScreen
+        self.present(navigationController, animated: true, completion: nil)
     }
     
     @objc private func pool_genie_next_tapped() {
         if pool_genie_is_second {
             pool_genie_is_third = true
             
-//            let vc = AztecCreateController()
-//            let navigationController = UINavigationController(rootViewController: vc)
-//            navigationController.modalPresentationStyle = .fullScreen
-//            self.present(navigationController, animated: true, completion: nil)
+            let vc = PoolGenieCalculatorController()
+            let navigationController = UINavigationController(rootViewController: vc)
+            navigationController.modalPresentationStyle = .fullScreen
+            self.present(navigationController, animated: true, completion: nil)
+            
+            UserDefaults.standard.set(true, forKey: "ass")
+            print("Value of 'ass' key is set to true")
             return
         }
         

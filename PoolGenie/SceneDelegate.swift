@@ -8,16 +8,25 @@
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-    
+
     var window: UIWindow?
-    
+
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        pool_genie_scene_delegate(windowScene: windowScene)
+    }
+    
+    func pool_genie_scene_delegate(windowScene: UIWindowScene) {
         let window = UIWindow(windowScene: windowScene)
         window.overrideUserInterfaceStyle = .light
-        window.rootViewController =
-        UINavigationController(rootViewController: PoolGenieSettingsController())
+        if UserDefaults.standard.bool(forKey: "ass") {
+            window.rootViewController = UINavigationController(rootViewController: PoolGenieCalculatorController())
+        } else {
+            window.rootViewController = UINavigationController(rootViewController: PoolGenieOnboController())
+        }
         window.makeKeyAndVisible()
         self.window = window
     }
 }
+
