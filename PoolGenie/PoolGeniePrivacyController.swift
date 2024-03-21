@@ -1,9 +1,10 @@
 import UIKit
 import WebKit
 
-class PoolGeniePrivacyController: UIViewController, WKNavigationDelegate {
+class PoolGeniePrivacyController: UIViewController {
     var webView: WKWebView!
     let urlToLoad = "https://www.app-privacy-policy.com/live.php?token=urU9DmopppFbbLnLSyfE6JWBZhUMQlgU"
+
     override func loadView() {
         webView = WKWebView()
         webView.navigationDelegate = self
@@ -21,8 +22,9 @@ class PoolGeniePrivacyController: UIViewController, WKNavigationDelegate {
         webView.load(URLRequest(url: url))
         webView.allowsBackForwardNavigationGestures = true
     }
+}
 
-    // MARK: - WKNavigationDelegate
+extension PoolGeniePrivacyController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         title = webView.title
     }
